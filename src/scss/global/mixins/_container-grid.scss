@@ -1,0 +1,23 @@
+// =============================================================================
+// CONTAINER GRID
+// =============================================================================
+
+@mixin container-grid {
+  @include clearfix;
+  @include grid;
+  @include grid--twelve-column;
+  margin: 0;
+  padding-left: rem($container-padding);
+  padding-right: rem($container-padding);
+
+  // IE11.
+  @include ie11 {
+    display: block;
+  }
+
+  @include breakpoint(medium) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem($container-width);
+  }
+}

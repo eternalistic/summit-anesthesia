@@ -1,0 +1,73 @@
+// =============================================================================
+// FORMS
+// =============================================================================
+@use "sass:math";
+
+.form-item__group {
+  .two-column {
+    .form-item {
+      @include breakpoint(large) {
+        width: 48%;
+      }
+    }
+  }
+}
+
+// Form item.
+.form-item {
+  display: flex;
+  flex-direction: column;
+  float: none;
+  justify-content: flex-end;
+  margin: 0;
+  position: relative;
+  width: 100%;
+
+  // Siblings.
+  + .form-item {
+    margin-top: rem(20px);
+  }
+
+  + .form-item__reset {
+    @include breakpoint(large) {
+      margin-top: 0;
+    }
+  }
+
+  label {
+    color: $blue-1;
+    display: block;
+    font-size: rem(16px);
+    font-family: $font-header;
+    line-height: math.div(24, 16);
+    margin-bottom: rem(5px);
+    padding: 0;
+  }
+
+  input,
+  select,
+  textarea {
+    background: $white;
+    border-radius: rem($global-radius);
+    border: 2px solid #ccc;
+    caret-color: $blue-1;
+    color: $black;
+    font-family: $font-body;
+    font-size: rem(16px);
+    line-height: math.div(24, 16);
+    outline: none;
+    padding: rem(10px);
+    transition: border-color 0.3s ease;
+    width: 100%;
+
+    // Last.
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    // Focus.
+    &:focus {
+      border-color: $orange-1;
+    }
+  }
+}

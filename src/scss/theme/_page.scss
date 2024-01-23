@@ -1,0 +1,62 @@
+// =============================================================================
+// PAGE
+// =============================================================================
+
+html {
+  background: $white;
+  color: #0e132a;
+  font-family: $base-font-family;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+
+  @include breakpoint(medium) {
+    scroll-padding-top: rem(160px);
+  }
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+
+  // Show mobile menu.
+  &.show-mobile-menu {
+    overflow: hidden;
+
+    @include breakpoint(large) {
+      overflow: auto !important;
+    }
+  }
+
+  // Success.
+  &.page-success {
+    background: $blue-1;
+  }
+}
+
+// Links.
+a,
+a:visited {
+  color: $blue-1;
+  text-decoration: underline;
+  transition: color .3s ease;
+
+  // Hover and focus.
+  &:hover,
+  &:focus {
+    color: $orange-1;
+    text-decoration: underline;
+  }
+}
+
+// Selection.
+::selection {
+  background-color: lighten($blue-1, 20%) !important;
+  color: $white !important;
+}
+
+// Focus.
+:focus {
+  outline: 2px solid $blue-1;
+  outline-offset: 2px;
+}

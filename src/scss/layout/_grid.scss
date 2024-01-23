@@ -1,0 +1,32 @@
+// =============================================================================
+// GRID
+// =============================================================================
+
+.grid {
+  @include grid;
+}
+
+// Two column.
+.grid--2-column {
+  @include grid--two-column;
+}
+
+// Three column.
+.grid--3-column {
+  @include grid--three-column;
+}
+
+// Four column.
+.grid--4-column {
+  @include grid--four-column;
+}
+
+// Five column.
+.grid--5-column {
+  @include grid--five-column;
+}
+
+// Six column.
+.grid--6-column {
+  @include grid--six-column;
+}

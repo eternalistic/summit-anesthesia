@@ -1,0 +1,21 @@
+// =============================================================================
+// CONTAINER
+// =============================================================================
+
+@mixin container {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: rem($container-width);
+  padding-left: rem($container-padding--mobile);
+  padding-right: rem($container-padding--mobile);
+
+  @include breakpoint(medium) {
+    padding-left: rem($container-padding--tablet);
+    padding-right: rem($container-padding--tablet);
+  }
+
+  @include breakpoint(large) {
+    padding-left: rem($container-padding);
+    padding-right: rem($container-padding);
+  }
+}

@@ -1,0 +1,10 @@
+// =============================================================================
+// PX TO EM CONVERTOR
+// Converting a px based value to em.
+// =============================================================================
+@use "sass:math";
+
+@function em($size) {
+  $emSize: math.div($size, $base-font-size);
+  @return #{$emSize}em;
+}

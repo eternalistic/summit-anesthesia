@@ -1,0 +1,105 @@
+// =============================================================================
+// PRIMARY MENU
+// =============================================================================
+
+.primary-menu {
+  @include breakpoint(medium, max) {
+    background: rgba(25, 26, 51, 0.90);
+    box-shadow: 0 4px 4px rgba($black, 0.25);
+    display: none;
+    left: 0;
+    padding: rem(20px);
+    position: absolute;
+    top: rem($header-height--mobile);
+    width: 100%;
+    z-index: $z-index--mobile-menu;
+
+    // Blur background color.
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+  }
+
+  @include breakpoint(medium) {
+    flex-grow: 1;
+  }
+
+  // Navigation expanded.
+  body.is-navigation-expanded & {
+    display: block;
+  }
+
+  .menu {
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(medium) {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .menu-item {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    // Siblings.
+    + .menu-item {
+      margin-top: rem(10px);
+
+      @include breakpoint(medium) {
+        margin-left: rem(40px);
+        margin-top: 0;
+      }
+    }
+  }
+
+  // "Home" menu item.
+  .menu-item--home {
+    @include breakpoint(medium, max) {
+      display: none;
+    }
+  }
+
+  // Link.
+  .menu-item__link,
+  .menu-item__link:visited {
+    color: $white;
+    display: block;
+    padding-bottom: rem(10px);
+    padding-top: rem(10px);
+    text-decoration: none;
+
+    @include breakpoint(medium) {
+      border-bottom: 2px solid transparent;
+      color: $blue-1;
+      transition: border-bottom-color 0.3s ease;
+    }
+
+    // Hover and focus.
+    &:hover,
+    &:focus {
+      color: $orange-1;
+      text-decoration: none;
+
+      @include breakpoint(medium) {
+        border-bottom-color: $orange-1;
+      }
+    }
+
+    // Is active.
+    &.is-active {
+      color: $orange-1;
+      border-bottom-color: $orange-1;
+    }
+  }
+}

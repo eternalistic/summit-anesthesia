@@ -1,0 +1,24 @@
+// =============================================================================
+// GRID
+// =============================================================================
+
+@mixin grid {
+  @include ie11 { display: block !important; } // If IE11, display as block.
+  grid-gap: $gutter * 2;
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(10px, 1fr));
+  }
+
+  // Columns stacked on mobile.
+  .grid__column {
+    + .grid__column {
+      margin-top: rem(20px);
+
+      @include breakpoint(medium) {
+        margin-top: 0;
+      }
+    }
+  }
+}

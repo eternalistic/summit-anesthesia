@@ -1,0 +1,47 @@
+// =============================================================================
+// PHOTO GALLERY
+// =============================================================================
+
+.photo-gallery {
+
+  // Links.
+  a,
+  a:visited {
+    display: block;
+    outline-offset: -4px;
+    outline: 4px solid transparent;
+    position: relative;
+    transition: outline-color 0.3s ease;
+
+    // Text overlay.
+    &::after {
+      @include center;
+      background: rgba($black, 0.5);
+      border-radius: $global-radius;
+      color: $white;
+      content: "Enlarge image";
+      opacity: 0;
+      padding: rem(10px) rem(20px);
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+      white-space: nowrap;
+    }
+
+    // Hover and focus.
+    &:hover,
+    &:focus {
+      outline-color: $orange-1;
+      transition: opacity 0.3s ease;
+
+      // Text overlay.
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}

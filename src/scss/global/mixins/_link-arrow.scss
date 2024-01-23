@@ -1,0 +1,58 @@
+// =============================================================================
+// LINK ARROW
+// =============================================================================
+@use "sass:math";
+
+@mixin link-arrow {
+  color: $blue-1;
+  display: inline-block;
+  font-size: rem(14px);
+  font-weight: 600;
+  line-height: math.div(22, 14);
+  padding-right: rem(28px);
+  position: relative;
+  text-decoration: underline;
+  transition: color 0.3s ease, padding-right 0.3s ease;
+
+  // Arrow and circle.
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  // Circle.
+  &::before {
+    background: $blue-1;
+    border-radius: 50%;
+    display: block;
+    height: rem(19px);
+    right: 0;
+    top: rem(3px);
+    transition: background 0.3s ease;
+    width: rem(19px);
+  }
+
+  // Arrow.
+  &::after {
+    border-bottom: 2px solid $white;
+    border-right: 2px solid $white;
+    display: inline-block;
+    height: rem(6px);
+    right: rem(7px);
+    top: rem(9px);
+    transform: rotate(-45deg);
+    width: rem(6px);
+  }
+
+  // Hover and focus.
+  &:hover,
+  &:focus {
+    padding-right: rem(30px);
+
+    // Circle.
+    &::before {
+      background-color: $orange-1;
+    }
+  }
+}

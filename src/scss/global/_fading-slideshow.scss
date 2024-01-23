@@ -1,0 +1,43 @@
+// =============================================================================
+// FADING SLIDESHOW
+// =============================================================================
+
+@keyframes fader {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.fading-slideshow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  > li {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &:first-of-type {
+      animation-name: fader;
+      animation-delay: 5s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+
+    &:nth-of-type(2) {
+      z-index: 10;
+    }
+
+    &:nth-of-type(n+3) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// =============================================================================
+// FOOTER
+// =============================================================================
+@use "sass:math";
+
+.footer {
+  background: #070b11;
+  color: #9fa6bd;
+  padding-bottom: rem(20px);
+  padding-top: rem(20px);
+  position: sticky;
+  text-align: center;
+  top: 100vh;
+
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+
+  // Container.
+  .container {
+    @include breakpoint(medium) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  p {
+    font-size: rem(12px);
+    line-height: math.div(16, 12);
+    margin-bottom: 0;
+  }
+}
+
+.footer-menu {
+  font-size: rem(12px);
+  line-height: math.div(16, 12);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(medium) {
+    display: flex;
+  }
+
+  // Links.
+  a,
+  a:visited {
+    color: $white;
+  }
+}
+
+.footer-menu__item {
+
+  // Siblings.
+  + .footer-menu__item {
+    margin-top: rem(10px);
+
+    @include breakpoint(medium) {
+      border-left: 1px solid rgba($white, 0.25);
+      margin-left: rem(18px);
+      margin-top: 0;
+      padding-left: rem(18px);
+    }
+  }
+}
+
+// Copyright.
+.footer__copyright {
+  margin-top: rem(10px);
+
+  @include breakpoint(medium) {
+    flex: 1;
+    margin-top: 0;
+    text-align: right;
+  }
+}

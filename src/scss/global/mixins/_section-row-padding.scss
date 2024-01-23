@@ -1,0 +1,46 @@
+// =============================================================================
+// SECTION ROW PADDING
+// Usage:
+// Apply section row padding to any div.
+// =============================================================================
+
+@mixin section-row-padding {
+  padding-bottom: rem(30px);
+  padding-top: rem(30px);
+
+  @include breakpoint(medium) {
+    padding-bottom: rem(45px);
+    padding-top: rem(45px);
+  }
+
+  @include breakpoint(large) {
+    padding-bottom: rem(60px);
+    padding-top: rem(60px);
+  }
+
+  // Remove spacing from first.
+  &--first {
+    margin-top: - rem(30px);
+
+    @include breakpoint(medium) {
+      margin-top: - rem(45px);
+    }
+
+    @include breakpoint(large) {
+      margin-top: - rem(60px);
+    }
+  }
+
+  // Remove spacing from last.
+  &--last {
+    margin-bottom: - rem(30px);
+
+    @include breakpoint(medium) {
+      margin-bottom: - rem(45px);
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: - rem(60px);
+    }
+  }
+}

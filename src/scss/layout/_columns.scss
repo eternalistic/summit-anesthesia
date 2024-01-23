@@ -1,0 +1,44 @@
+// =============================================================================
+// COLUMNS
+// =============================================================================
+
+.two-column {
+  @include breakpoint(large) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Column.
+  .column {
+
+    // Siblings.
+    + .column {
+      margin-top: rem(40px);
+
+      @include breakpoint(large) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  // 50/50 split.
+  &.two-column__50-50 {
+    .column-first {
+      @include breakpoint(large) {
+        padding-right: 5%;
+        width: 60%;
+      }
+    }
+
+    .column-last {
+      @include breakpoint(large) {
+        width: 40%;
+      }
+    }
+  }
+
+  // Align center;
+  &.two-column__align-center {
+    align-items: center;
+  }
+}

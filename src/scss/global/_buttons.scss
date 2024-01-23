@@ -1,0 +1,26 @@
+// =============================================================================
+// BUTTONS
+// =============================================================================
+
+// Base Button Styles.
+.button,
+a.button,
+a.button--1 {
+  @include button-base;
+}
+
+// Default button style.
+.button,
+a.button,
+a.button:visited,
+.form-submit {
+  @include button--1;
+}
+
+.button,
+a.button,
+a.button:visited {
+  &.button--1 {
+    @include button--1;
+  }
+}

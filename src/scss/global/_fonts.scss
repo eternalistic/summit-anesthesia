@@ -1,0 +1,31 @@
+// =============================================================================
+// FONTS
+// =============================================================================
+
+// Base font settings.
+//========================================//
+$base-font-size-integer:   strip-units($base-font-size);
+
+// Font stacks.
+//========================================//
+$arial-black:     "Arial Black", Gadget, sans-serif;
+$arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+$georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
+$times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+$times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+$verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
+
+// Custom font and font families.
+//========================================//
+$montserrat: "Montserrat", sans-serif;
+$libre-baskerville: "Libre Baskerville", serif;
+
+// Font stack variables.
+//========================================//
+$base-font-family: $montserrat;
+$font-body:        $montserrat;
+$font-header:      $libre-baskerville;
+$font-monospace:   $courier;
