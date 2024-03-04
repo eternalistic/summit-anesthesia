@@ -30,3 +30,8 @@
 .grid--6-column {
   @include grid--six-column;
 }
+
+// 25/75 column.
+.grid--25-75 {
+  @include grid--25-75;
+}
