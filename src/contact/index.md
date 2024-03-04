@@ -11,7 +11,7 @@ eleventyNavigation:
   <h1>Contact</h1>
   <div class="two-column two-column__50-50">
     <div class="column-first column">
-      <p>For more information about our services please fill out the form below or give us a call at <a href="tel:5094077097">(509) 407-7097</a>.</p>
+      <p>For more information about our services please fill out the form below.</p>
       <form
         name="contact"
         netlify
@@ -55,10 +55,13 @@ eleventyNavigation:
     </div>
     <div class="column-last column">
       <div class="c--callout">
-        <h3>Fully Licensed</h3>
-        <p>J&M Remodel LLC is located in Spokane Valley, WA.
-        <p>We are licensed, bonded and insured in the state of Washington.</p>
-        <p><strong>License Number</strong><br>604710435-001-0001</p>
+        <h3>Contact Information</h3>
+        <p><strong>Address</strong><br>
+        14875 Tyee Road<br>
+        Umpqua, OR  97486</p>
+        <p><strong>Phone:</strong> (541) 459-4947</p>
+        <p><strong>Fax:</strong> (541) 459-1556</p>
+        <p><strong>Toll Free:</strong> 1-866-805-7016</p>
       </div>
     </div>
   </div>

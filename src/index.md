@@ -76,18 +76,6 @@ layout: layout.html
   </div>
 </section>
 
-<section class="c--testimonial section-row">
-  <div class="container">
-    <div class="eyebrow"></div>
-    <h2 class="c--testimonial__title">Testimonial</h2>
-    <blockquote>
-      Josh from J+M designed and built our deck, installed flooring, created a custom floor-to-ceiling stone fireplace with live edge mantle and floating shelves, and the list goes on. Passionate in his craft and reliable in his word, Josh should be your first and last stop for home remodeling and renovation.
-      <cite>— Rich Byers</cite>
-    </blockquote>
-    <a href="/testimonials" class="link-arrow">Read more from our clients</a>
-  </div>
-</section>
-
 <section class="c--intro c--intro--accent-top-left c--intro--full-width section-row section-row--last">
   <div class="container">
     <div class="c--intro__content">
