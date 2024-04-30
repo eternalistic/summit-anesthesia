@@ -16,9 +16,8 @@ eleventyNavigation:
     </div>
     <div class="grid__column-2">
       <h2 class="about-bio__title">Chris McCormick</h2>
-      <h3 class="about-bio__position">President</h3>
-      <p>Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.</p>
+      <h3 class="about-bio__position">CVT, Owner</h3>
+      <p>Chris started, and has owned, Summit Anesthesia Service Corporation since 2004.  Chris started his career in Veterinary Medicine in1982 graduating from Portland Community College with a degree in Veterinary Science Technology.  He put his Technician skills to use by working in Medical Research for 18 years and in Animal Emergency Medicine for 7 years.  Chris continues to keep his Veterinary Technician License current and when not working,  enjoys spending time with his family and his two German Shorthair Pointers, Dakota and Cooper.</p>
     </div>
   </div>
 
@@ -27,10 +26,9 @@ eleventyNavigation:
       [img]
     </div>
     <div class="grid__column-2">
-      <h2 class="about-bio__title">Second Person</h2>
-      <h3 class="about-bio__position">Office Manager</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.</p>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
+      <h2 class="about-bio__title">Sue Elder</h2>
+      <h3 class="about-bio__position">CVT</h3>
+      <p>Sue has held many positions in and around the veterinary field.  She started as a kennel worker and a dog trainer then received her CVT in 1993 from Parkland Community College in Champaign, Illinois.   Sue was involved in helping to establish the Academy of Veterinary Dental Technicians (AVDT) in 2006, and as a Charter Member, sat and passed the (VTS) Dentistry Exam in 2008. Sue has dogs and cats and loves the outdoors.  Sue has been with Summit Anesthesia Service Corporation since 2009.</p>
     </div>
   </div>
 
@@ -39,10 +37,9 @@ eleventyNavigation:
       [img]
     </div>
     <div class="grid__column-2">
-      <h2 class="about-bio__title">Another Person</h2>
-      <h3 class="about-bio__position">Job Title</h3>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+      <h2 class="about-bio__title">Kendra Butz</h2>
+      <h3 class="about-bio__position">CVT</h3>
+      <p>Kendra began her career in veterinary medicine as a receptionist in 2004 and then graduated from San Juan College in 2014 with a degree in Veterinary Science Technology.  Kendra has performed the duties of every position in the veterinary clinic over the past 20 years.  One of her favorite positions was being the surgery technician and the responsibilities associated with it.  When not working, Kendra spends her time with her two daughters, her dog, cat, a herd of goats, and several flocks of chickens.  Kendra joined Summit Anesthesia Service Corporation in 2023.</p>
     </div>
   </div>
 </div>
