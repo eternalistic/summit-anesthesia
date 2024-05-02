@@ -4,51 +4,27 @@ layout: layout.html
 <section class="c--hero section-row--first">
   <div class="container">
     <div class="c--hero__content">
-      <h1 class="c--hero__title">We specialize in home remodeling and renovation.</h1>
+      <h1 class="c--hero__title">We are Committed to Your Health</h1>
+      <p>For over 30 years, we've been dedicated to providing the best possible health care with the least amount of hassle and wasted time.</p>
+      <a href="#" class="button">Book an Appointment</a>
     </div>
   </div>
-  <ul class="fading-slideshow">
-    <li>
-    <picture>
-      <source srcset="/images/hero/dining.webp" media="(min-width: 1024px)" type="image/jpeg">
-      <source srcset="/images/hero/dining--small.webp" type="image/jpeg">
-      <img src="/images/hero/dining.webp" alt="Dining room" typeof="foaf:Image" width="1536" height="1024">
-    </picture>
-    </li>
-    <li>
-      <picture>
-        <source srcset="/images/hero/entry.webp" media="(min-width: 1024px)" type="image/jpeg">
-        <source srcset="/images/hero/entry--small.webp" type="image/jpeg">
-        <img src="/images/hero/entry.webp" alt="Entry" typeof="foaf:Image" width="1536" height="1024">
-      </picture>
-    </li>
-    <li>
-      <picture>
-        <source srcset="/images/hero/dining2.webp" media="(min-width: 1024px)" type="image/jpeg">
-        <source srcset="/images/hero/dining2--small.webp" type="image/jpeg">
-        <img src="/images/hero/dining2.webp" alt="Dining room" typeof="foaf:Image" width="1536" height="1024">
-      </picture>
-    </li>
-    <li>
-      <picture>
-        <source srcset="/images/hero/deck.webp" media="(min-width: 1024px)" type="image/jpeg">
-        <source srcset="/images/hero/deck--small.webp" type="image/jpeg">
-        <img src="/images/hero/deck.webp" alt="Deck" typeof="foaf:Image" width="1536" height="1024">
-      </picture>
-    </li>
-  </ul>
 </section>
 
-<section class="c--intro c--intro--accent-top-right section-row">
+<section class="c--intro section-row">
   <div class="container">
     <div class="c--intro__content">
-      <div class="eyebrow"></div>
-      <h2>Better, Faster, Cleaner.</h2>
-      <p>With 13 years of experience in general construction, and 10 years in interior remodeling, we know what it takes to deliver quality results time and time again.</p>
-      <a href="/about" class="link-arrow">Learn more about us</a>
+
+123
+
     </div>
   </div>
 </section>
+
+
+
+
+
 
 <section class="c--portfolio section-row">
   <div class="container">

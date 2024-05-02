@@ -6,21 +6,21 @@
 // Button Base.
 @mixin button-base {
   border: 2px solid transparent;
-  border-radius: rem(6px);
+  border-radius: rem(60px);
   cursor: pointer;
   display: inline-block;
   font-family: $font-body;
   font-size: rem(16px);
-  font-weight: 600;
+  font-weight: 500;
   line-height: math.div(22, 16);
   margin-left: 0;
   margin-right: 0;
-  padding: rem(13px) rem(25px);
+  padding: rem(15px) rem(35px);
   text-align: center;
   text-decoration: none;
   text-shadow: none;
   text-transform: uppercase;
-  transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 
   @include breakpoint(medium) {
     font-size: rem(18px);
@@ -36,16 +36,18 @@
 
 // Primary Blue.
 @mixin button--1 {
-  background-color: $blue-1;
+  background-color: $blue-2;
   color: $white;
 
   // Hover.
   &:hover {
-    background-color: $orange-1;
+    background-color: $blue-5;
+    color: $white;
   }
 
   // Focus.
   &:focus {
-    box-shadow: 0 0 0 2px rgba(0, 91, 200, 0.2);
+    box-shadow: 0 0 0 2px rgba($blue-5, 0.2);
+    color: $white;
   }
 }

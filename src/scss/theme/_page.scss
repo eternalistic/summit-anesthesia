@@ -4,7 +4,7 @@
 
 html {
   background: $white;
-  color: #0e132a;
+  color: $dark-1;
   font-family: $base-font-family;
   height: 100%;
   scroll-behavior: smooth;
@@ -37,14 +37,14 @@ body {
 // Links.
 a,
 a:visited {
-  color: $blue-1;
+  color: $blue-2;
   text-decoration: underline;
   transition: color .3s ease;
 
   // Hover and focus.
   &:hover,
   &:focus {
-    color: $orange-1;
+    color: $blue-5;
     text-decoration: underline;
   }
 }

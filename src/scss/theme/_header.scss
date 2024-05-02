@@ -1,8 +1,65 @@
 // =============================================================================
 // HEADER
 // =============================================================================
+@use "sass:math";
 
-.header {
+// Header top.
+.header-top {
+  background: $green-1;
+  color: $white;
+  text-align: right;
+
+  // Container.
+  .container {
+    padding-bottom: rem(10px);
+    padding-top: rem(10px);
+  }
+}
+
+// Menu.
+.header-top__menu {
+  display: flex;
+  font-size: rem(14px);
+  font-weight: 500;
+  justify-content: flex-end;
+  line-height: math.div(14, 14);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  // Links.
+  a,
+  a:visited {
+    border-bottom: 1px solid rgba($white, 0.5);
+    color: $white;
+    text-decoration: none;
+    transition: border-bottom-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $white;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.header-top__menu-item {
+
+  // Siblings.
+  + .header-top__menu-item {
+    border-left: 1px solid rgba($white, 0.5);
+    margin-left: rem(10px);
+    padding-left: rem(10px);
+  }
+}
+
+
+
+
+
+
+.header-main {
   height: rem($header-height--mobile);
 
   @include breakpoint(medium) {

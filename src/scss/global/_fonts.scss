@@ -20,12 +20,13 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 
 // Custom font and font families.
 //========================================//
-$montserrat: "Montserrat", sans-serif;
-$libre-baskerville: "Libre Baskerville", serif;
+$opensans: "Open Sans", sans-serif;
+$exo:  "Exo", sans-serif;
+$poppins: "Poppins", sans-serif;
 
 // Font stack variables.
 //========================================//
-$base-font-family: $montserrat;
-$font-body:        $montserrat;
-$font-header:      $libre-baskerville;
+$base-font-family: $poppins;
+$font-body:        $poppins;
+$font-header:      $opensans;
 $font-monospace:   $courier;
