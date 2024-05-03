@@ -62,10 +62,10 @@
 
 // Eyebrow.
 .eyebrow {
-  background: $blue-4;
+  background: $green-1;
   display: block;
   height: rem(6px);
-  margin-bottom: rem(25px);
+  margin-block-end: rem(25px);
   position: relative;
   width: rem(60px);
 

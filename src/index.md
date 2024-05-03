@@ -37,22 +37,22 @@ layout: layout.html
 <section class="c--portfolio section-row">
   <div class="container">
     <div class="eyebrow"></div>
-    <h2 class="c--portfolio__title">Portfolio</h2>
-    <p>Featured projects from our recent work.</p>
+    <h2 class="c--portfolio__title">Equipment</h2>
+    <p>We service the following equipment.</p>
     <div class="grid grid--3-column photo-gallery">
       <div class="grid__column">
-        <a href="/images/portfolio/bathroom/1.webp" data-fancybox="portfolio" data-caption="Bathroom">
-          <img src="/images/portfolio/bathroom/thumbnail/1.webp" alt="Bathroom" width="624" height="405" />
+        <a href="/images/portfolio/fireplace/2.webp" data-fancybox="portfolio" data-caption="Fireplace">
+          <img src="/images/portfolio/equipment-1.jpg" alt="Bathroom" width="" height="" />
         </a>
       </div>
       <div class="grid__column">
         <a href="/images/portfolio/fireplace/2.webp" data-fancybox="portfolio" data-caption="Fireplace">
-          <img src="/images/portfolio/fireplace/thumbnail/2.webp" alt="Fireplace" width="624" height="405" />
+          <img src="/images/portfolio/equipment-1.jpg" alt="Bathroom" width="" height="" />
         </a>
       </div>
       <div class="grid__column">
-        <a href="/images/portfolio/kitchen/1.webp" data-fancybox="portfolio" data-caption="Dining room">
-          <img src="/images/portfolio/kitchen/thumbnail/1.webp" alt="Kitchen room" width="624" height="405" />
+        <a href="/images/portfolio/fireplace/2.webp" data-fancybox="portfolio" data-caption="Fireplace">
+          <img src="/images/portfolio/equipment-1.jpg" alt="Bathroom" width="" height="" />
         </a>
       </div>
     </div>
