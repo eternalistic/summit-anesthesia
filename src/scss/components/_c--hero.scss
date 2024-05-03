@@ -4,32 +4,32 @@
 @use "sass:math";
 
 .c--hero {
-  // @include breakpoint(large) {
-  // }
-
-
-background: linear-gradient(90deg, rgba(229,244,250,1) 0%, rgba(229,244,250,0.5) 75%, rgba(207,224,242,1) 100%);
-
-
+  background: linear-gradient(90deg, rgba(229, 244, 250, 1) 0%, rgba(229, 244, 250, 0.5) 75%, rgba(207, 224, 242, 1) 100%);
 
   // Container.
   .container {
-    position: relative;
-
     display: flex;
     flex-direction: column;
-    padding-block-end: rem(210px);
-    padding-block-start: rem(140px);
+    padding-block-end: rem(80px);
+    padding-block-start: rem(40px);
+    position: relative;
+
+    @include breakpoint(large) {
+      padding-block-end: rem(210px);
+      padding-block-start: rem(140px);
+    }
   }
 }
 
 // Content.
 .c--hero__content {
-  width: math.div(6, 10) * 100%;
+  @include breakpoint(large) {
+    width: percentage(math.div(3, 5));
+  }
 
   p {
     font-size: rem(18px);
-    line-height: math.div(24, 18);
+    line-height: math.div(28, 18);
   }
 }
 
@@ -37,9 +37,10 @@ background: linear-gradient(90deg, rgba(229,244,250,1) 0%, rgba(229,244,250,0.5)
 .c--hero__title {
   font-size: rem(24px);
   line-height: math.div(32, 24);
+  margin-block-end: rem(24px);
 
   @include breakpoint(large) {
-    font-size: 3.75rem;
-    line-height: math.div(64, 60);
+    font-size: rem(60px);
+    line-height: math.div(72, 60);
   }
 }

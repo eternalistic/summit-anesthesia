@@ -4,14 +4,13 @@
 @use "sass:math";
 
 @mixin link-arrow {
-  color: $blue-1;
+  color: $blue-4;
   display: inline-block;
   font-size: rem(14px);
   font-weight: 600;
   line-height: math.div(22, 14);
   padding-right: rem(28px);
   position: relative;
-  text-decoration: underline;
   transition: color 0.3s ease, padding-right 0.3s ease;
 
   // Arrow and circle.
@@ -23,7 +22,7 @@
 
   // Circle.
   &::before {
-    background: $blue-1;
+    background: $blue-4;
     border-radius: 50%;
     display: block;
     height: rem(19px);
@@ -48,11 +47,12 @@
   // Hover and focus.
   &:hover,
   &:focus {
+    color: $blue-5;
     padding-right: rem(30px);
 
     // Circle.
     &::before {
-      background-color: $orange-1;
+      background-color: $blue-5;
     }
   }
 }

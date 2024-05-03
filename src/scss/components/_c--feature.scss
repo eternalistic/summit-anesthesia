@@ -1,0 +1,54 @@
+// =============================================================================
+// FEATURE
+// =============================================================================
+@use "sass:math";
+
+.c--feature {
+  margin-block-start: - rem(30px);
+  padding-block-start: 0;
+  position: relative;
+  z-index: 1;
+
+  @include breakpoint(large) {
+    margin-block-start: - rem(80px);
+  }
+}
+
+// Content.
+.c--feature__content {
+  @include grid;
+  column-gap: rem(15px);
+
+  @include breakpoint (medium) {
+    @include grid--three-column;
+    column-gap: rem(30px);
+  }
+}
+
+// Item.
+.c--feature__item {
+  background: $white;
+  border-radius: 9px;
+  box-shadow: 0 0 15px rgba($black, 0.05);
+  padding: rem(20px);
+  text-align: center;
+
+  @include breakpoint (large) {
+    padding-block: rem(34px);
+  }
+
+  h2 {
+    font-size: rem(18px);
+    line-height: math.div(22, 18);
+
+    @include breakpoint (large) {
+      font-size: rem(22px);
+      line-height: math.div(28, 22);
+    }
+  }
+
+  p {
+    font-size: rem(14px);
+    line-height: math.div(24, 14);
+  }
+}

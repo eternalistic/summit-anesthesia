@@ -7,7 +7,10 @@
 .header-top {
   background: $green-1;
   color: $white;
-  text-align: right;
+
+  @include breakpoint(medium) {
+    display: block;
+  }
 
   // Container.
   .container {
@@ -19,13 +22,20 @@
 // Menu.
 .header-top__menu {
   display: flex;
-  font-size: rem(14px);
+  font-size: rem(12px);
+  flex-wrap: wrap;
   font-weight: 500;
-  justify-content: flex-end;
+  justify-content: center;
   line-height: math.div(14, 14);
   list-style: none;
   margin: 0;
   padding: 0;
+  row-gap: rem(5px);
+
+  @include breakpoint(large) {
+    font-size: rem(14px);
+    justify-content: flex-end;
+  }
 
   // Links.
   a,
@@ -35,6 +45,7 @@
     text-decoration: none;
     transition: border-bottom-color 0.3s ease;
 
+    // Hover and focus.
     &:hover,
     &:focus {
       border-bottom-color: $white;

@@ -4,19 +4,28 @@ layout: layout.html
 <section class="c--hero section-row--first">
   <div class="container">
     <div class="c--hero__content">
-      <h1 class="c--hero__title">We are Committed to Your Health</h1>
-      <p>For over 30 years, we've been dedicated to providing the best possible health care with the least amount of hassle and wasted time.</p>
-      <a href="#" class="button">Book an Appointment</a>
+      <h1 class="c--hero__title">Veterinary Equipment Repair and Support</h1>
+      <p>We specialize in servicing, repairing, and maintaining veterinary anesthesia machines and associated accessories, including vaporizers, ventilators, and oxygen concentrators, across Oregon, Washington, and North Idaho.</p>
+      <a href="#" class="button">Schedule an Appointment</a>
     </div>
   </div>
 </section>
 
-<section class="c--intro section-row">
+<section class="c--feature section-row">
   <div class="container">
-    <div class="c--intro__content">
-
-123
-
+    <div class="c--feature__content">
+      <div class="c--feature__item grid__column">
+        <h2>Licensed Veterinary Technicians</h2>
+        <p>We have comprehensive expertise in anesthesia machines and their accompanying accessories commonly encountered in veterinary medicine.</p>
+      </div>
+      <div class="c--feature__item grid__column">
+        <h2>Repair Equipment</h2>
+        <p>Our service technicians are equipped with repair parts in their vehicles, enabling us to promptly address emergencies and perform necessary repairs during machine service.</p>
+      </div>
+      <div class="c--feature__item grid__column">
+        <h2>Maintenance and Support</h2>
+        <p>We provide maintenance for the typical veterinary anesthesia machines found in clinics, as well as select older human anesthesia machines occasionally utilized in veterinary settings.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -52,13 +61,3 @@ layout: layout.html
   </div>
 </section>
 
-<section class="c--intro c--intro--accent-top-left c--intro--full-width section-row section-row--last">
-  <div class="container">
-    <div class="c--intro__content">
-      <div class="eyebrow"></div>
-      <h2>Areas We Serve</h2>
-      <p>Spokane, Liberty Lake, Otis Orchards, Airway Heights, Medical Lake, Rockford, Deer Park, Cheney, Colville, Coeur d'Alene, Post Falls, Hayden and surrounding areas.</p>
-      <a href="/contact" class="link-arrow">Contact us</a>
-    </div>
-  </div>
-</section>
