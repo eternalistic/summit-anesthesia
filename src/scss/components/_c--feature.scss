@@ -9,6 +9,10 @@
   position: relative;
   z-index: 1;
 
+  @include breakpoint(medium) {
+    margin-block-start: - rem(40px);
+  }
+
   @include breakpoint(large) {
     margin-block-start: - rem(80px);
   }
@@ -51,4 +55,11 @@
     font-size: rem(14px);
     line-height: math.div(24, 14);
   }
+}
+
+// Icon.
+.c--feature__icon {
+  display: block;
+  margin-inline: auto;
+  margin-block-end: rem(20px);
 }

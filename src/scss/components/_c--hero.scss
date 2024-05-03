@@ -8,11 +8,14 @@
 
   // Container.
   .container {
-    display: flex;
-    flex-direction: column;
+    @include grid;
     padding-block-end: rem(80px);
     padding-block-start: rem(40px);
     position: relative;
+
+    @include breakpoint(medium) {
+      @include grid--five-column;
+    }
 
     @include breakpoint(large) {
       padding-block-end: rem(210px);
@@ -23,13 +26,23 @@
 
 // Content.
 .c--hero__content {
-  @include breakpoint(large) {
-    width: percentage(math.div(3, 5));
+  @include breakpoint(medium) {
+    grid-column: 1 / span 3;
   }
 
   p {
     font-size: rem(18px);
     line-height: math.div(28, 18);
+  }
+}
+
+// Image.
+.c--hero__image {
+  background: #ddd;
+  display: block;
+
+  @include breakpoint(medium) {
+    grid-column: 4 / span 2;
   }
 }
 
