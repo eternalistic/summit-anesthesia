@@ -34,6 +34,25 @@ layout: layout.html
   </div>
 </section>
 
+
+
+
+<section class="c--services section-row">
+  <div class="container">
+    <div class="grid grid--2-column">
+      <div class="grid__column grid__column-1">
+      [img]
+      </div>
+      <div class="grid__column grid__column-2">
+        <h2 class="c--portfolio__title">Services</h2>
+        <p>asdasdas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <section class="c--portfolio section-row">
   <div class="container">
     <div class="eyebrow"></div>
@@ -59,4 +78,11 @@ layout: layout.html
     <a href="/portfolio" class="link-arrow">View Portfolio</a>
   </div>
 </section>
+
+
+
+
+
+
+
 

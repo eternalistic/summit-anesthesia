@@ -1256,7 +1256,13 @@ iframe {
 }
 @media (min-width: 42.5em) {
   .site-logo {
-    width: 8.75rem;
+    width: 15.5rem;
+
+    svg {
+      display: block;
+      height: 5.625rem;
+      width: 15.5rem;
+    }
   }
 }
 
