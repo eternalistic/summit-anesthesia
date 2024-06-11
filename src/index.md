@@ -16,17 +16,17 @@ layout: layout.html
   <div class="container">
     <div class="c--feature__content">
       <div class="c--feature__item grid__column">
-        <img src="https://demo.voidcoders.com/htmldemo/medhelpV2/medhelp-center/assets/images/icon/ftr-icon1.png" alt="Icon description" class="c--feature__icon" />
+      <img src="/images/icons/veterinary.svg" alt="Veterinary pay icon" class="c--feature__icon" />
         <h2 class="c--feature__title">Licensed Veterinary Technicians</h2>
         <p>We have comprehensive expertise in anesthesia machines and their accompanying accessories commonly encountered in veterinary medicine.</p>
       </div>
       <div class="c--feature__item grid__column">
-      <img src="https://demo.voidcoders.com/htmldemo/medhelpV2/medhelp-center/assets/images/icon/ftr-icon2.png" alt="Icon description" class="c--feature__icon" />
+      <img src="/images/icons/transportation.svg" alt="Repair truck icon" class="c--feature__icon" />
         <h2 class="c--feature__title">Repair Equipment</h2>
         <p>Our service technicians are equipped with repair parts in their vehicles, enabling us to promptly address emergencies and perform necessary repairs during machine service.</p>
       </div>
       <div class="c--feature__item grid__column">
-      <img src="https://demo.voidcoders.com/htmldemo/medhelpV2/medhelp-center/assets/images/icon/ftr-icon3.png" alt="Icon description" class="c--feature__icon" />
+      <img src="/images/icons/travel.svg" alt="Location and travel icon" class="c--feature__icon" />
         <h2 class="c--feature__title">Maintenance and Support</h2>
         <p>We provide maintenance for the typical veterinary anesthesia machines found in clinics, as well as select older human anesthesia machines occasionally utilized in veterinary settings.</p>
       </div>

@@ -1623,8 +1623,10 @@ body.is-navigation-expanded .primary-menu {
 
 .c--feature__icon {
   display: block;
-  margin-inline: auto;
+  height: 5.875rem;
   margin-block-end: 1.25rem;
+  margin-inline: auto;
+  width: 5.875rem;
 }
 
 .c--hero {
