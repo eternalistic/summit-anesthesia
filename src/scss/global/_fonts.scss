@@ -20,7 +20,6 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 
 // Custom font and font families.
 //========================================//
-$opensans: "Open Sans", sans-serif;
 $exo:  "Exo", sans-serif;
 $poppins: "Poppins", sans-serif;
 
@@ -28,5 +27,5 @@ $poppins: "Poppins", sans-serif;
 //========================================//
 $base-font-family: $poppins;
 $font-body:        $poppins;
-$font-header:      $opensans;
+$font-header:      $exo;
 $font-monospace:   $courier;

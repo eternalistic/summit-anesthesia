@@ -3,6 +3,10 @@
 // =============================================================================
 @use "sass:math";
 
+.header {
+  box-shadow: 0 5px 15px rgba($black, 0.15);
+}
+
 // Header top.
 .header-top {
   background: $green-1;
@@ -22,8 +26,8 @@
 // Menu.
 .header-top__menu {
   display: flex;
-  font-size: rem(12px);
   flex-wrap: wrap;
+  font-size: rem(12px);
   font-weight: 500;
   justify-content: center;
   line-height: math.div(14, 14);
@@ -32,7 +36,11 @@
   padding: 0;
   row-gap: rem(5px);
 
-  @include breakpoint(large) {
+  flex-direction: column;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    flex-direction: row;
     font-size: rem(14px);
     justify-content: flex-end;
   }
@@ -59,9 +67,11 @@
 
   // Siblings.
   + .header-top__menu-item {
-    border-left: 1px solid rgba($white, 0.5);
-    margin-left: rem(10px);
-    padding-left: rem(10px);
+    @include breakpoint(medium) {
+      border-left: 1px solid rgba($white, 0.5);
+      margin-left: rem(10px);
+      padding-left: rem(10px);
+    }
   }
 }
 
@@ -96,9 +106,13 @@
 // Logo.
 .site-logo {
   display: block;
-  width: rem(85px);
 
-  @include breakpoint(medium) {
-    width: rem(140px);
+  svg {
+    height: auto;
+    width: rem(150px);
+
+    @include breakpoint(medium) {
+      width: rem(225px);
+    }
   }
 }

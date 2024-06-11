@@ -121,3 +121,19 @@
     z-index: 1;
   }
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.medium-up {
+  @include breakpoint(medium, max) {
+    display: none;
+  }
+}
+
+.large-up {
+  @include breakpoint(large, max) {
+    display: none;
+  }
+}

@@ -41,19 +41,20 @@
     padding-block: rem(34px);
   }
 
-  h2 {
-    font-size: rem(18px);
-    line-height: math.div(22, 18);
-
-    @include breakpoint (large) {
-      font-size: rem(22px);
-      line-height: math.div(28, 22);
-    }
-  }
-
   p {
-    font-size: rem(14px);
-    line-height: math.div(24, 14);
+    font-size: rem(16px);
+    line-height: math.div(24, 16);
+  }
+}
+
+.c--feature__title {
+  font-weight: 600;
+  font-size: rem(18px);
+  line-height: math.div(22, 18);
+
+  @include breakpoint (large) {
+    font-size: rem(22px);
+    line-height: math.div(28, 22);
   }
 }
 
