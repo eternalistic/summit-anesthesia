@@ -36,7 +36,6 @@
 
   label {
     color: $dark-1;
-
     display: block;
     font-size: rem(16px);
     font-family: $font-header;
@@ -68,7 +67,7 @@
 
     // Focus.
     &:focus {
-      border-color: $orange-1;
+      border-color: $blue-2;
     }
   }
 }

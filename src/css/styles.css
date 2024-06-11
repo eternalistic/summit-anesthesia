@@ -380,6 +380,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.625rem;
 }
@@ -687,7 +688,7 @@ a.button:visited.button--1:focus {
 .form-item input:focus,
 .form-item select:focus,
 .form-item textarea:focus {
-  border-color: #ff6b35;
+  border-color: #2c76e2;
 }
 
 .clear {
@@ -1169,9 +1170,9 @@ iframe {
 @media (min-width: 42.5em) {
   .footer-menu__item + .footer-menu__item {
     border-left: 1px solid rgba(255, 255, 255, 0.25);
-    margin-left: 1.125rem;
+    margin-left: 0.625rem;
     margin-top: 0;
-    padding-left: 1.125rem;
+    padding-left: 0.625rem;
   }
 }
 
