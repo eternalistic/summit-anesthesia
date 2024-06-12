@@ -51,6 +51,7 @@
   font-weight: 600;
   font-size: rem(18px);
   line-height: math.div(22, 18);
+  margin-bottom: rem(8px);
 
   @include breakpoint (large) {
     font-size: rem(22px);
