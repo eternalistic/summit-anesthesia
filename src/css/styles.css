@@ -1429,6 +1429,14 @@ a:visited:focus {
   outline-offset: 2px;
 }
 
+.page--404 .main .container {
+  text-align: center;
+}
+
+.page--404 .main .container img {
+  margin-bottom: 2.5rem;
+}
+
 @media (max-width: 42.4375em) {
   .primary-menu {
     background: rgba(25, 26, 51, 0.9);
