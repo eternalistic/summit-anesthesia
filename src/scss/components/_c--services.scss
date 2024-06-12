@@ -3,8 +3,21 @@
 // =============================================================================
 @use "sass:math";
 
-.c--services {
-  background: orange;
+.c--services .grid {
+  align-items: center;
+}
 
-  background: url("/images/vector-shape1.png") no-repeat 0 50%;
+.c--services .grid__column-1 {
+  position: relative;
+
+  &::after {
+    background: url("/images/shape3.png") no-repeat 0 0;
+    position: absolute;
+    left: -60px;
+    bottom: -60px;
+    z-index: -1;
+    width: 506px;
+    height: 434px;
+    content: "";
+  }
 }

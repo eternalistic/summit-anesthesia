@@ -35,17 +35,18 @@ layout: layout.html
 </section>
 
 
-
-
 <section class="c--services section-row">
   <div class="container">
-    <div class="grid grid--2-column">
+    <div class="eyebrow"></div>
+    <div class="grid grid--2-column grid--50-50">
       <div class="grid__column grid__column-1">
-      [img]
+        <img src="/images/wd-left-thumb.jpg" alt="" />
       </div>
       <div class="grid__column grid__column-2">
         <h2 class="c--portfolio__title">Services</h2>
-        <p>asdasdas</p>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+        <a href="/contact" class="button uppercase">Schedule an Appointment</a>
       </div>
     </div>
   </div>

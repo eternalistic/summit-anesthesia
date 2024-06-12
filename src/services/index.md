@@ -7,7 +7,6 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  <div class="eyebrow"></div>
   <h1>Portfolio</h1>
   <div class="grid grid--3-column photo-gallery">
     <div class="grid__column">
