@@ -15,8 +15,7 @@
   // Nested container.
   .container {
     max-width: none;
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline: 0;
   }
 }
 
@@ -65,7 +64,7 @@
   background: $green-1;
   display: block;
   height: rem(6px);
-  margin-block-end: rem(25px);
+  margin-block: rem(40px);
   position: relative;
   width: rem(60px);
 

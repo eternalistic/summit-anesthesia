@@ -1,0 +1,4 @@
+Sitemap: https://www.jmremodel.us/sitemap.xml
+
+User-agent: *
+Disallow:
