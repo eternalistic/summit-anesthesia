@@ -34,20 +34,7 @@ body {
   }
 }
 
-// Links.
-a,
-a:visited {
-  color: $blue-2;
-  text-decoration: underline;
-  transition: color .3s ease;
 
-  // Hover and focus.
-  &:hover,
-  &:focus {
-    color: $blue-5;
-    text-decoration: underline;
-  }
-}
 
 // Selection.
 ::selection {

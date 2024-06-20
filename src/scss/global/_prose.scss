@@ -1,0 +1,29 @@
+// =============================================================================
+// PROSE
+// =============================================================================
+
+.prose {
+
+  // Links.
+  a,
+  a:visited {
+    background-image: linear-gradient($green-1, $green-1);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    color: $black;
+    display: inline;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0 .125rem;
+    text-decoration: none;
+    transition: background-size 0.2s ease;
+
+    // Hover and focus.
+    &:hover,
+    &:focus {
+      background-size: 100% 100%;
+      background-position: 0 100%;
+    }
+  }
+}

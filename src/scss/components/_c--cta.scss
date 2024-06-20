@@ -1,0 +1,20 @@
+// =============================================================================
+// CTA
+// =============================================================================
+
+.c--cta {
+  align-items: center;
+  display: flex;
+}
+
+.c--cta::after {
+  background-color: $blue-2;
+  content: '';
+  flex-grow: 1;
+  height: .0625rem;
+  opacity: 0.25;
+}
+
+.c--cta .button {
+  margin-right: 1.5rem;
+}

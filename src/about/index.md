@@ -7,12 +7,10 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  <h1>About</h1>
-
-
-<p>Summit Anesthesia Service Corporation is a company that is customer service <a href="#">focused and has been in existence since 2004, specializing</a> in servicing, repairs and maintaining Veterinary Anesthesia Machines and their accessories i.e. Vaporizers, Ventilators, Oxygen Concentrators, exclusively in Oregon, Washington and North Idaho.  Our Service Technicians are licensed Veterinary Technicians and have extensive working knowledge of the Anesthesia Machines and their accessories commonly seen in Veterinary Medicine.  All Service Technicians carry repair parts in their Service Vehicles, allowing us to service and/or make necessary repairs at the time of the machine service or repair in an emergency.  We service all of the common Veterinary Anesthesia Machines seen in Clinics and, in addition, some of the older Human Anesthesia Machines that occasionally come into Veterinary Clinics.
-</p>
-
+  <div class="prose">
+    <h1>About</h1>
+    <p>Summit Anesthesia Service Corporation is a company that is customer service <a href="#">focused and has been in existence since 2004, specializing</a> in servicing, repairs and maintaining Veterinary Anesthesia Machines and their accessories i.e. Vaporizers, Ventilators, Oxygen Concentrators, exclusively in Oregon, Washington and North Idaho.  Our Service Technicians are licensed Veterinary Technicians and have extensive working knowledge of the Anesthesia Machines and their accessories commonly seen in Veterinary Medicine.  All Service Technicians carry repair parts in their Service Vehicles, allowing us to service and/or make necessary repairs at the time of the machine service or repair in an emergency.  We service all of the common Veterinary Anesthesia Machines seen in Clinics and, in addition, some of the older Human Anesthesia Machines that occasionally come into Veterinary Clinics.</p>
+  </div>
 
 
 
@@ -22,7 +20,6 @@ eleventyNavigation:
 
 
 
-  <div class="eyebrow"></div>
   <h2>Our Team</h2>
 
   <div class="about-bio">

@@ -7,7 +7,7 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  <h1>Portfolio</h1>
+  <h1>Services</h1>
   <div class="grid grid--3-column photo-gallery">
     <div class="grid__column">
       <a href="/images/portfolio/entry/1.webp" data-fancybox="portfolio" data-caption="Entry room">

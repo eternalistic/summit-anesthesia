@@ -21,7 +21,7 @@
 @import "global/forms";
 @import "global/helpers";
 @import "global/media";
-@import "global/photo-gallery";
+@import "global/prose";
 @import "global/photo-gallery";
 
 // Layout.
@@ -48,6 +48,7 @@
 //========================================//
 @import "components/c--about-bio";
 @import "components/c--callout";
+@import "components/c--cta";
 @import "components/c--feature";
 @import "components/c--hero";
 @import "components/c--portfolio";

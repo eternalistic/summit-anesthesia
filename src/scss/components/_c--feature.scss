@@ -4,57 +4,60 @@
 @use "sass:math";
 
 .c--feature {
-  margin-block-start: - rem(30px);
+  margin-block-start: -1.875rem;
   padding-block-start: 0;
   position: relative;
   z-index: 1;
 
   @include breakpoint(medium) {
-    margin-block-start: - rem(40px);
+    margin-block-start: -2.5rem;
   }
 
   @include breakpoint(large) {
-    margin-block-start: - rem(80px);
+    margin-block-start: -5rem;
   }
+}
+
+// Removed bottom space if followed by a "section-row".
+.c--feature:has(+ .section-row) {
+  padding-bottom: 0;
 }
 
 // Content.
 .c--feature__content {
   @include grid;
-  column-gap: rem(15px);
 
   @include breakpoint (medium) {
     @include grid--three-column;
-    column-gap: rem(30px);
   }
 }
 
 // Item.
 .c--feature__item {
   background: $white;
-  border-radius: 9px;
-  box-shadow: 0 0 15px rgba($black, 0.05);
-  padding: rem(20px);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba($black, 0.08);
+  padding: 1.5rem;
   text-align: center;
 
   @include breakpoint (large) {
-    padding-block: rem(34px);
+    padding-block: 2rem;
   }
 
   p {
-    font-size: rem(16px);
+    font-size: 1rem;
     line-height: math.div(24, 16);
   }
 }
 
 .c--feature__title {
   font-weight: 600;
-  font-size: rem(18px);
+  font-size: 1.125rem;
   line-height: math.div(22, 18);
-  margin-bottom: rem(8px);
+  margin-bottom: .5rem;
 
   @include breakpoint (large) {
-    font-size: rem(22px);
+    font-size: 1.375rem;
     line-height: math.div(28, 22);
   }
 }
@@ -62,8 +65,7 @@
 // Icon.
 .c--feature__icon {
   display: block;
-  height: rem(94px);
-  margin-block-end: rem(20px);
-  margin-inline: auto;
-  width: rem(94px);
+  height: 5.875rem;
+  margin: 1.25rem auto;
+  width: 5.875rem;
 }
