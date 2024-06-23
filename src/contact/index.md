@@ -44,9 +44,7 @@ eleventyNavigation:
           <textarea id="message" name="message" rows="5" color="60" required/></textarea>
         </div>
         <p class="form-item form-item__hidden hidden">
-          <label>
-            Don't fill this out if you're human: <input name="bot-field" />
-          </label>
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
         </p>
         <div class="form-item" data-netlify-recaptcha="true"></div>
         <div class="form-item form-item__submit">
@@ -59,8 +57,8 @@ eleventyNavigation:
         <h3>Contact Information</h3>
         <div class="prose">
           <p><strong>Address</strong><br>{{ site.address }}</p>
-          <p><strong>Phone:</strong> {{ site.phoneNumberLink }}</p>
           <p><strong>Fax:</strong> (541) 459-1556</p>
+          <p><strong>Phone:</strong> {{ site.phoneNumberLink }}</p>
           <p><strong>Toll Free:</strong> {{ site.phoneTollFreeNumberLink }}</p>
         </div>
       </div>

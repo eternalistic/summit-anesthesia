@@ -972,7 +972,7 @@ iframe {
   display: inline;
   font-weight: 500;
   line-height: 1.5;
-  padding: 0 0.125rem;
+  padding-inline: 0.125rem;
   text-decoration: none;
   transition: background-size 0.2s ease;
 }
