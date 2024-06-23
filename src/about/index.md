@@ -21,7 +21,7 @@ eleventyNavigation:
     <h3 class="about-bio__title">Chris McCormick</h3>
     <h4 class="about-bio__position">CVT, Owner</h4>
     <div class="prose">
-      <p>Chris started, and has owned, Summit Anesthesia Service Corporation since 2004. Chris started his career in Veterinary Medicine in1982 graduating from Portland Community College with a degree in Veterinary Science Technology. He put his Technician skills to use by working in Medical Research for 18 years and in Animal Emergency Medicine for 7 years. Chris continues to keep his Veterinary Technician License current and when not working, enjoys spending time with his family and his two German Shorthair Pointers, Dakota and Cooper.</p>
+      <p>Chris started, and has owned, Summit Anesthesia Service Corporation since 2004. Chris started his career in Veterinary Medicine in 1982 graduating from Portland Community College with a degree in Veterinary Science Technology. He put his Technician skills to use by working in Medical Research for 18 years and in Animal Emergency Medicine for 7 years. Chris continues to keep his Veterinary Technician License current and when not working, enjoys spending time with his family and his two German Shorthair Pointers, Dakota and Cooper.</p>
     </div>
     <h3 class="about-bio__title">Sue Elder</h3>
     <h4 class="about-bio__position">CVT</h4>
