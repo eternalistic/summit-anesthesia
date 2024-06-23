@@ -62,6 +62,14 @@ h3 {
 }
 
 h4 {
+  font-size: rem(18px);
+  line-height: math.div(28, 20);
+  margin-bottom: rem(12px);
+
+  @include breakpoint(medium) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 h5 {

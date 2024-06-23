@@ -404,6 +404,18 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 42.5em) {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
@@ -982,6 +994,11 @@ iframe {
   background-size: 100% 100%;
   background-position: 0 100%;
 }
+.prose p.intro {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
 
 .photo-gallery a,
 .photo-gallery a:visited {
@@ -1515,6 +1532,35 @@ body.is-navigation-expanded .primary-menu {
 
 .about-bio__title {
   margin-bottom: 0;
+}
+
+.about-bio {
+  overflow: hidden;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.about-bio::before {
+  background-color: #0bc1bb;
+  content: "";
+  height: 0.0625rem;
+  left: 0;
+  opacity: 0.25;
+  position: absolute;
+  top: 2.5rem;
+  width: 75vw;
+  z-index: 1;
+}
+
+.about-bio::after {
+  background-color: #0bc1bb;
+  content: "";
+  height: 27.5rem;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 6.25rem;
+  width: 0.0625rem;
 }
 
 .c--callout {
