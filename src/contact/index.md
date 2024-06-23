@@ -7,10 +7,12 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  <h1>Contact</h1>
+  <h1 class="page-title">{{ title }}</h1>
   <div class="two-column two-column__50-50">
     <div class="column-first column">
-      <p>For more information about our services please fill out the form below.</p>
+      <div class="prose">
+        <p>For more information about our services please fill out the form below.</p>
+      </div>
       <form
         name="contact"
         netlify
@@ -22,8 +24,8 @@ eleventyNavigation:
         action="/contact/success"
       >
         <div class="form-item form-item__name">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
+          <label for="name" class="form-required">Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
         <div class="form-item form-item__group">
           <div class="two-column two-column__50-50 two-column__align-center">
@@ -38,8 +40,8 @@ eleventyNavigation:
           </div>
         </div>
         <div class="form-item form-item__message">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" color="60" /></textarea>
+          <label for="message" class="form-required">Message</label>
+          <textarea id="message" name="message" rows="5" color="60" required/></textarea>
         </div>
         <p class="form-item form-item__hidden hidden">
           <label>
@@ -55,12 +57,12 @@ eleventyNavigation:
     <div class="column-last column">
       <div class="c--callout">
         <h3>Contact Information</h3>
-        <p><strong>Address</strong><br>
-        14875 Tyee Road<br>
-        Umpqua, OR  97486</p>
-        <p><strong>Phone:</strong> (541) 459-4947</p>
-        <p><strong>Fax:</strong> (541) 459-1556</p>
-        <p><strong>Toll Free:</strong> 1-866-805-7016</p>
+        <div class="prose">
+          <p><strong>Address</strong><br>{{ site.address }}</p>
+          <p><strong>Phone:</strong> {{ site.phoneNumberLink }}</p>
+          <p><strong>Fax:</strong> (541) 459-1556</p>
+          <p><strong>Toll Free:</strong> {{ site.phoneTollFreeNumberLink }}</p>
+        </div>
       </div>
     </div>
   </div>

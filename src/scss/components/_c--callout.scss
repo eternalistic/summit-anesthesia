@@ -5,22 +5,7 @@
 
 .c--callout {
   background: $beige-1;
-  padding: rem(20px);
-  position: relative;
-
-  // Triangle
-  &::after {
-    border-color: transparent $orange-2 transparent;
-    border-style: solid;
-    border-width: 0 90px 90px 0;
-    content: "";
-    height: 0;
-    position: absolute;
-    right: - rem(8px);
-    top: - rem(8px);
-    width: 0;
-    z-index: -1;
-  }
+  padding: 1.25rem;
 
   // Remove bottom margin from last item.
   *:last-child {

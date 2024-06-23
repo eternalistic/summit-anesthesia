@@ -1,10 +1,11 @@
 ---
 layout: layout.html
+title: Veterinary Equipment Repair and Support
 ---
 <section class="c--hero section-row--first">
   <div class="container">
     <div class="c--hero__content grid__column">
-      <h1 class="c--hero__title">Veterinary Equipment Repair and Support</h1>
+      <h1 class="c--hero__title">{{ title }}</h1>
       <div class="prose">
         <p>We specialize in servicing, repairing, and maintaining veterinary anesthesia machines and associated accessories, including vaporizers, ventilators, and oxygen concentrators, across Oregon, Washington, and North Idaho.</p>
       </div>
@@ -43,7 +44,6 @@ layout: layout.html
     </div>
   </div>
 </section>
-
 
 <section class="c--services section-row">
   <div class="container">
