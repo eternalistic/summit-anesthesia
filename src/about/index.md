@@ -9,9 +9,9 @@ eleventyNavigation:
 <div class="container">
   <h1 class="page-title">{{ title }}</h1>
   <div class="prose">
-    <p class="intro">Dedicated to exceptional customer service since 2004, Summit Anesthesia Service Corporation specializes in the servicing, repair, and maintenance of Veterinary Anesthesia Machines and their accessories, including Vaporizers, Ventilators, and Oxygen Concentrators. Proudly serving Oregon, Washington, and North Idaho, our mission is to ensure your equipment operates seamlessly for the best patient care.</p>
-    <p>Our team consists of licensed Veterinary Technicians with extensive knowledge of anesthesia machines and their accessories commonly used in veterinary medicine. Their hands-on experience and specialized training guarantee that your equipment is maintained and repaired to the highest standards, supporting optimal care for your patients.</p>
-    <p>Prepared for any situation, our Service Technicians carry a comprehensive range of repair parts in their service vehicles. This readiness allows us to perform necessary repairs or maintenance immediately, even in emergencies, ensuring your equipment experiences minimal downtime.</p>
+    <p class="intro">Dedicated to exceptional customer service since 2004, Summit Anesthesia Service Corporation specializes in the servicing, repair, and maintenance of veterinary anesthesia machines and their accessories, including vaporizers, ventilators, and oxygen concentrators. Proudly serving Oregon, Washington, and North Idaho, our mission is to ensure your equipment operates seamlessly for the best patient care.</p>
+    <p>Our team consists of licensed veterinary technicians with extensive knowledge of anesthesia machines and their accessories commonly used in veterinary medicine. Their hands-on experience and specialized training guarantee that your equipment is maintained and repaired to the highest standards, supporting optimal care for your patients.</p>
+    <p>Prepared for any situation, our service technicians carry a comprehensive range of repair parts in their service vehicles. This readiness allows us to perform necessary repairs or maintenance immediately, even in emergencies, ensuring your equipment experiences minimal downtime.</p>
     <p>We specialize in servicing all common veterinary anesthesia machines found in clinics, as well as older human anesthesia machines that occasionally find their way into veterinary practices.</p>
   </div>
 </div>
