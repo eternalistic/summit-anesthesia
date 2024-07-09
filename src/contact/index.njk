@@ -5,13 +5,18 @@ eleventyNavigation:
   key: Contact
   order: 4
 ---
+{# Components. #}
+{% import "components/prose/prose.njk" as prose %}
+
+{# Markup. #}
 <div class="container">
   {% include 'page-title.njk' %}
   <div class="two-column two-column__50-50">
     <div class="column-first column">
-      <div class="prose">
-        <p>For more information about our services please fill out the form below.</p>
-      </div>
+      {{ prose.component(
+        content = "For more information about our services please fill out the form below."
+      )}}
+
       <form
         name="contact"
         netlify
