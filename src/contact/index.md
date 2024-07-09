@@ -1,13 +1,12 @@
 ---
 layout: layout.html
-title: Contact
+pageTitle: Contact
 eleventyNavigation:
   key: Contact
   order: 4
 ---
-
 <div class="container">
-  <h1 class="page-title">{{ title }}</h1>
+  {% include 'page-title.njk' %}
   <div class="two-column two-column__50-50">
     <div class="column-first column">
       <div class="prose">

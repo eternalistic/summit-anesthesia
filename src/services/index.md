@@ -1,13 +1,12 @@
 ---
 layout: layout.html
-title: Services
+pageTitle: Services
 eleventyNavigation:
   key: Services
   order: 1
 ---
-
 <div class="container">
-  <h1 class="page-title">{{ title }}</h1>
+  {% include 'page-title.njk' %}
   <div class="prose">
     <p class="intro">We service, repair, and maintain a wide variety of veterinary anesthesia machines and their accessories, including vaporizers, ventilators, and oxygen concentrators</p>
   </div>

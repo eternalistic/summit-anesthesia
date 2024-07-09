@@ -1,7 +1,7 @@
 {
-  "name": "jmremodel",
+  "name": "summitanesthesia",
   "version": "1.0.0",
-  "description": "J&amp;M Remodel",
+  "description": "Summit Anesthesia Service Corporation",
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,22 +15,22 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "autoprefixer": "^10.4.13",
-    "browser-sync": "^2.28.3",
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
     "browser-sync-webpack-plugin": "^2.3.0",
     "clean-css": "^5.3.3",
-    "css-loader": "^6.7.3",
-    "css-minimizer-webpack-plugin": "^4.2.2",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
     "file-loader": "^6.2.0",
     "filemanager-webpack-plugin": "^8.0.0",
-    "mini-css-extract-plugin": "^2.7.2",
-    "postcss": "^8.4.21",
-    "postcss-loader": "^7.0.2",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.2.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss": "^8.4.39",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
     "sass-toolkit": "^2.10.2",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "npm-check-updates": "^16"
