@@ -3,8 +3,8 @@
 // =============================================================================
 
 html {
-  background: $white;
-  color: $dark-1;
+  background: var(--color-white);
+  color: var(--color-dark-1);
   font-family: $base-font-family;
   height: 100%;
   scroll-behavior: smooth;
@@ -30,19 +30,19 @@ body {
 
   // Success.
   &.page-success {
-    background: $blue-1;
+    background: var(--color-blue-1);
   }
 }
 
 // Selection.
 ::selection {
-  background-color: lighten($green-1, 20%) !important;
-  color: $black !important;
+  // background-color: lighten(var(--color-green-1), 20%) !important;
+  color: var(--color-black) !important;
 }
 
 // Focus.
 // :focus {
-//   outline: 2px solid $green-1;
+//   outline: 2px solid var(--color-green-1);
 //   outline-offset: 2px;
 // }
 

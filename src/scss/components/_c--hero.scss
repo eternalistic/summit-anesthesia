@@ -13,11 +13,8 @@
     padding-block-start: rem(40px);
     position: relative;
 
-    @include breakpoint(medium) {
-      @include grid--five-column;
-    }
-
     @include breakpoint(large) {
+      @include grid--five-column;
       padding-block-end: rem(210px);
       padding-block-start: rem(140px);
     }
@@ -27,6 +24,10 @@
 // Content.
 .c--hero__content {
   @include breakpoint(medium) {
+    grid-column: 1 / span 12;
+  }
+
+  @include breakpoint(large) {
     grid-column: 1 / span 3;
   }
 
@@ -38,10 +39,13 @@
 
 // Image.
 .c--hero__image {
-  background: #ddd;
-  display: block;
-
   @include breakpoint(medium) {
+    @include breakpoint(large, max) {
+      display: none;
+    }
+  }
+
+  @include breakpoint(large) {
     grid-column: 4 / span 2;
   }
 }

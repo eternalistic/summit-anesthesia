@@ -35,7 +35,7 @@
   }
 
   label {
-    color: $dark-1;
+    color: var(--color-dark-1);
     display: block;
     font-size: rem(16px);
     font-family: $font-header;
@@ -47,11 +47,11 @@
   input,
   select,
   textarea {
-    background: $white;
+    background: var(--color-white);
     border-radius: rem($global-radius);
     border: 2px solid #ccc;
-    caret-color: $blue-1;
-    color: $black;
+    caret-color: var(--color-blue-1);
+    color: var(--color-black);
     font-family: $font-body;
     font-size: rem(16px);
     line-height: math.div(24, 16);
@@ -67,7 +67,7 @@
 
     // Focus.
     &:focus {
-      border-color: $blue-2;
+      border-color: var(--color-blue-2);
     }
   }
 }

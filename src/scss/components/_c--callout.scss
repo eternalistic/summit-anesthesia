@@ -4,7 +4,7 @@
 @use "sass:math";
 
 .c--callout {
-  background: $beige-1;
+  background: var(--color-beige-1);
   padding: 1.25rem;
 
   // Remove bottom margin from last item.

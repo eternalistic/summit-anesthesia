@@ -4,13 +4,13 @@
 @use "sass:math";
 
 .header {
-  box-shadow: 0 5px 15px rgba($black, 0.15);
+  box-shadow: 0 5px 15px rgba(var(--color-black), 0.15);
 }
 
 // Header top.
 .header-top {
-  background: $green-1;
-  color: $white;
+  background: var(--color-green-1);
+  color: var(--color-white);
 
   @include breakpoint(medium) {
     display: block;
@@ -48,16 +48,16 @@
   // Links.
   a,
   a:visited {
-    border-bottom: 1px solid rgba($white, 0.5);
-    color: $white;
+    border-bottom: 1px solid rgba(var(--color-white), 0.5);
+    color: var(--color-white);
     text-decoration: none;
     transition: border-bottom-color 0.3s ease;
 
     // Hover and focus.
     &:hover,
     &:focus {
-      border-bottom-color: $white;
-      color: $white;
+      border-bottom-color: var(--color-white);
+      color: var(--color-white);
       text-decoration: none;
     }
   }
@@ -68,7 +68,7 @@
   // Siblings.
   + .header-top__menu-item {
     @include breakpoint(medium) {
-      border-left: 1px solid rgba($white, 0.5);
+      border-left: 1px solid rgba(var(--color-white), 0.5);
       margin-left: rem(10px);
       padding-left: rem(10px);
     }

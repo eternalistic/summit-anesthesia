@@ -22,7 +22,7 @@
 }
 
 .about-bio::before {
-  background-color: $green-1;
+  background-color: var(--color-green-1);
   content: "";
   height: .0625rem;
   left: 0;
@@ -34,7 +34,7 @@
 }
 
 .about-bio::after {
-  background-color: $green-1;
+  background-color: var(--color-green-1);
   content: "";
   height: 27.5rem;
   opacity: 0.25;

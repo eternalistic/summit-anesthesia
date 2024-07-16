@@ -4,7 +4,7 @@
 @use "sass:math";
 
 @mixin link-arrow {
-  color: $blue-4;
+  color: var(--color-blue-4);
   display: inline-block;
   font-size: rem(14px);
   font-weight: 600;
@@ -22,7 +22,7 @@
 
   // Circle.
   &::before {
-    background: $blue-4;
+    background: var(--color-blue-4);
     border-radius: 50%;
     display: block;
     height: rem(19px);
@@ -34,8 +34,8 @@
 
   // Arrow.
   &::after {
-    border-bottom: 2px solid $white;
-    border-right: 2px solid $white;
+    border-bottom: 2px solid var(--color-white);
+    border-right: 2px solid var(--color-white);
     display: inline-block;
     height: rem(6px);
     right: rem(7px);
@@ -47,12 +47,12 @@
   // Hover and focus.
   &:hover,
   &:focus {
-    color: $blue-5;
+    color: var(--color-blue-5);
     padding-right: rem(30px);
 
     // Circle.
     &::before {
-      background-color: $blue-5;
+      background-color: var(--color-blue-5);
     }
   }
 }

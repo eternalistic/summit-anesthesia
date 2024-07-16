@@ -9,7 +9,7 @@
   border-radius: 0;
   border: 0;
   box-shadow: none;
-  color: $orange-1;
+  color: var(--color-blue-2);
   cursor: pointer;
   display: block;
   font-size: 0;
@@ -35,7 +35,7 @@
   // Hamburger menu.
   span {
     @include vertical-center;
-    background-color: $orange-1;
+    background-color: var(--color-blue-2);
     display: block;
     height: rem(2px);
     left: rem(12px);
@@ -46,7 +46,7 @@
     // Lines.
     &:before,
     &:after {
-      background-color: $orange-1;
+      background-color: var(--color-blue-2);
       content: "";
       display: block;
       height: rem(2px);
@@ -71,8 +71,8 @@
 
   // Active.
   &.is-active {
-    background: rgba($orange-1, .1);
-    outline: 1px solid rgba($orange-1, .25);
+    background: rgba(var(--color-blue-2), .1);
+    outline: 1px solid rgba(var(--color-blue-2), .25);
 
     // "X" Close button.
     span {

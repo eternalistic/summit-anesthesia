@@ -9,26 +9,27 @@ $base-font-size: 16px;
 // Colors.
 //========================================//
 
-// General.
-$black: #000;
-$white: #fff;
+:root {
+  // General.
+  --color-black: #000;
+  --color-white: #fff;
 
-// Color scheme.
-$blue-1: #dcf4fb;
-$blue-2: #2c76e2;
-$blue-3: #183257;
-$blue-4: #142949;
-$blue-5: #1160d4;
-$blue-6: #9fa6bd;
+  // Color scheme.
+  --color-blue-1: #dcf4fb;
+  --color-blue-2: #2c76e2;
+  --color-blue-3: #183257;
+  --color-blue-4: #142949;
+  --color-blue-5: #1160d4;
+  --color-blue-6: #9fa6bd;
+  --color-green-1: #0bc1bb;
+  --color-green-2: #e6f9f8;
 
-$green-1: #0bc1bb;
-$green-2: #e6f9f8;
+  --color-orange-1: #ff6b35;
+  --color-orange-2: #f7c59f;
+  --color-beige-1: #f6f5f1;
 
-$orange-1: #ff6b35;
-$orange-2: #f7c59f;
-$beige-1: #f6f5f1;
-
-$dark-1: #222222;
+  --color-dark-1: #222222;
+}
 
 // Page.
 //========================================//

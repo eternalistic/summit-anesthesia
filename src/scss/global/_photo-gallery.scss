@@ -16,9 +16,9 @@
     // Text overlay.
     &::after {
       @include center;
-      background: rgba($black, 0.5);
+      background: rgba(var(--color-black), 0.5);
       border-radius: $global-radius;
-      color: $white;
+      color: var(--color-white);
       content: "Enlarge image";
       opacity: 0;
       padding: rem(10px) rem(20px);
@@ -30,7 +30,7 @@
     // Hover and focus.
     &:hover,
     &:focus {
-      outline-color: $orange-1;
+      outline-color: var(--color-orange-1);
       transition: opacity 0.3s ease;
 
       // Text overlay.

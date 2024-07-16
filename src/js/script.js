@@ -21,14 +21,14 @@ menuItemLinks.forEach(function(link) {
 });
 
 // Fading slideshow.
-window.addEventListener("DOMContentLoaded", (e) => {
-  document.querySelectorAll(".fading-slideshow > li").forEach((current) => {
-    current.addEventListener("animationend", (e) => {
-      e.target.parentNode.appendChild(e.target);
-    });
-  });
-});
+// window.addEventListener("DOMContentLoaded", (e) => {
+//   document.querySelectorAll(".fading-slideshow > li").forEach((current) => {
+//     current.addEventListener("animationend", (e) => {
+//       e.target.parentNode.appendChild(e.target);
+//     });
+//   });
+// });
 
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
+// Fancybox.bind("[data-fancybox]", {
+//   // Your custom options
+// });

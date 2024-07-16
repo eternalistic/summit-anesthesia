@@ -10,7 +10,7 @@
 
   // Overlay.
   &:after {
-    background-color: rgba($black, .35);
+    background-color: rgba(var(--color-black), .35);
     content: "";
     display: block;
     height: 100%;

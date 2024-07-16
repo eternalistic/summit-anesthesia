@@ -6,7 +6,7 @@
 .primary-menu {
   @include breakpoint(medium, max) {
     background: rgba(25, 26, 51, 0.90);
-    box-shadow: 0 4px 4px rgba($black, 0.25);
+    box-shadow: 0 4px 4px rgba(var(--color-black), 0.25);
     display: none;
     left: 0;
     padding: rem(20px);
@@ -73,7 +73,7 @@
   // Link.
   .menu-item__link,
   .menu-item__link:visited {
-    color: $white;
+    color: var(--color-white);
     display: block;
     padding-bottom: rem(10px);
     padding-top: rem(10px);
@@ -81,18 +81,18 @@
 
     @include breakpoint(medium) {
       border-bottom: 2px solid transparent;
-      color: $dark-1;
+      color: var(--color-dark-1);
       transition: border-bottom-color 0.3s ease;
     }
 
     // Hover and focus.
     &:hover,
     &:focus {
-      color: $dark-1;
+      color: var(--color-dark-1);
       text-decoration: none;
 
       @include breakpoint(medium) {
-        border-bottom-color: $green-1;
+        border-bottom-color: var(--color-green-1);
       }
     }
 

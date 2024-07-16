@@ -8,11 +8,11 @@
   // Links.
   a,
   a:visited {
-    background-image: linear-gradient($green-1, $green-1);
+    // background-image: linear-gradient(var(--color-green-1), var(--color-green-1));
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 100% 0.1em;
-    color: $black;
+    color: var(--color-black);
     display: inline;
     font-weight: 500;
     line-height: 1.5;
@@ -99,7 +99,7 @@
   }
 
   blockquote {
-    border-left: 8px solid $blue-2;
+    border-left: 8px solid var(--color-blue-2);
     font-family: $font-header;
     font-size: rem(18px);
     line-height: math.div(28, 18);

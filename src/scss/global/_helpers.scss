@@ -36,10 +36,10 @@
 
 // Skip link.
 .skip-link {
-  background: $white;
+  background: var(--color-white);
   border-top: 0;
-  box-shadow: 0 0 20px rgb($black, 15%);
-  color: $black;
+  box-shadow: 0 0 20px rgb(var(--color-black), 15%);
+  color: var(--color-black);
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
@@ -61,7 +61,7 @@
 
 // Eyebrow.
 .eyebrow {
-  background: $green-1;
+  background: var(--color-green-1);
   display: block;
   height: rem(6px);
   margin-block: rem(40px);
@@ -78,14 +78,14 @@
 
   // Cut out left.
   &::before {
-    @include arrow(right, 6px, $white);
+    @include arrow(right, 6px, var(--color-white));
     left: 0;
     top: 0;
   }
 
   // Cut out right.
   &::after {
-    @include arrow(left, 6px, $white);
+    @include arrow(left, 6px, var(--color-white));
     right: 0;
     top: - rem(6px);
   }
@@ -103,7 +103,7 @@
 
   // Triangle.
   &::after {
-    border-color: transparent $orange-2 transparent;
+    border-color: transparent var(--color-orange-2) transparent;
     border-style: solid;
     border-width: 0 120px 120px 0;
     top: - rem(8px);
@@ -135,4 +135,8 @@
   @include breakpoint(large, max) {
     display: none;
   }
+}
+
+.with-border-radius {
+  border-radius: 8px;
 }

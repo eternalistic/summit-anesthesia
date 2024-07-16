@@ -1,5 +1,5 @@
 // Pure CSS arrows
-@mixin arrow($direction: right, $size: 3px, $color: $black) {
+@mixin arrow($direction: right, $size: 3px, $color: var(--color-black)) {
   border: 0; // reset any existing borders
   content: "";
   display: block;
