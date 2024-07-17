@@ -1223,7 +1223,7 @@ iframe {
 }
 @media (min-width: 42.5em) {
   .footer-menu__item + .footer-menu__item {
-    border-left: 1px solid rgba(var(--color-white), 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
     margin-left: 0.625rem;
     margin-top: 0;
     padding-left: 0.625rem;

@@ -66,7 +66,7 @@
     margin-top: rem(10px);
 
     @include breakpoint(medium) {
-      border-left: 1px solid rgba(var(--color-white), 0.25);
+      border-left: 1px solid rgba(255, 255, 255, 0.25);
       margin-left: rem(10px);
       margin-top: 0;
       padding-left: rem(10px);
