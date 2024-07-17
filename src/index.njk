@@ -2,22 +2,19 @@
 layout: layout.html
 title: Veterinary Equipment Repair and Support
 ---
-<section class="c--hero section-row--first">
-  <div class="container">
-    <div class="c--hero__content grid__column">
-      <h1 class="c--hero__title">{{ title }}</h1>
-      <div class="prose">
-        <p>We specialize in servicing, repairing, and maintaining veterinary anesthesia machines and associated accessories, including vaporizers, ventilators, and oxygen concentrators, across Oregon, Washington, and North Idaho.</p>
-      </div>
-      <div class="c--cta">
-        <a href="/contact" class="button uppercase">Schedule an Appointment</a>
-      </div>
-    </div>
-    <div class="c--hero__image grid__column">
-      <img src="/images/cat-wave.webp" alt="Cat being held and waving" class="with-border-radius" />
-    </div>
-  </div>
-</section>
+
+{# Components. #}
+{% import "components/hero/hero.njk" as hero %}
+
+{{ hero.component(
+  title = title,
+  body = "We specialize in servicing, repairing, and maintaining veterinary anesthesia machines and associated accessories, including vaporizers, ventilators, and oxygen concentrators, across Oregon, Washington, and North Idaho.",
+  linkURL = "/contact",
+  linkText = "Schedule an Appointment",
+  imageName = "cat-wave.webp",
+  imageAlt = "Cat being held and waving",
+  sectionRowFirst = true
+)}}
 
 <section class="c--feature section-row">
   <div class="container">
