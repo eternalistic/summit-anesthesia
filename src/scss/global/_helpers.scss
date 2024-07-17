@@ -138,5 +138,5 @@
 }
 
 .with-border-radius {
-  border-radius: 8px;
+  border-radius: var(--global-radius);
 }

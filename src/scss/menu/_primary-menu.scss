@@ -9,11 +9,11 @@
     box-shadow: 0 4px 4px rgba(var(--color-black), 0.25);
     display: none;
     left: 0;
-    padding: rem(20px);
+    padding: 1.25rem;
     position: absolute;
-    top: rem($header-height--mobile);
+    top: var(--header-height--mobile);
     width: 100%;
-    z-index: $z-index--mobile-menu;
+    z-index: var(--z-index--mobile-menu);
 
     // Blur background color.
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {

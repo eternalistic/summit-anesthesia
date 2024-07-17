@@ -68,7 +68,7 @@
   // Siblings.
   + .header-top__menu-item {
     @include breakpoint(medium) {
-      border-left: 1px solid rgba(var(--color-white), 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
       margin-left: rem(10px);
       padding-left: rem(10px);
     }
@@ -81,7 +81,7 @@
 
 
 .header-main {
-  height: rem($header-height--mobile);
+  height: var(--header-height--mobile);
 
   @include breakpoint(medium) {
     height: auto;
@@ -89,16 +89,16 @@
 
   // Container.
   .container {
-    padding-bottom: rem($container-padding--mobile);
-    padding-top: rem($container-padding--mobile);
+    padding-bottom: var(--container-padding--mobile);
+    padding-top: var(--container-padding--mobile);
     position: relative;
 
     @include breakpoint(medium) {
       align-items: center;
       display: flex;
       justify-content: space-between;
-      padding-bottom: rem($gutter);
-      padding-top: rem($gutter);
+      padding-bottom: var(--gutter);
+      padding-top: var(--gutter);
     }
   }
 }

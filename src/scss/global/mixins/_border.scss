@@ -3,10 +3,10 @@
 // =============================================================================
 
 @mixin border {
-  border: solid 1px $gray-2;
-  border-radius: $global-radius;
+  border: solid 1px var(--color-gray-2);
+  border-radius: var(--global-radius);
 }
 
 @mixin border-bottom {
-  border-bottom: solid 1px $gray-2;
+  border-bottom: solid 1px var(--color-gray-2);
 }

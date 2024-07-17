@@ -7,22 +7,20 @@
   linkText,
   sectionRowFirst = false
 ) %}
-
-<section class="c--hero{% if sectionRowFirst == true %} section-row--first{% endif %}">
-  <div class="container">
-    <div class="c--hero__content grid__column">
-      <h1 class="c--hero__title">{{ title }}</h1>
-      <div class="prose">
-        <p>{{ body }}</p>
+  <section class="c--hero{% if sectionRowFirst == true %} section-row--first{% endif %}">
+    <div class="container">
+      <div class="c--hero__content grid__column">
+        <h1 class="c--hero__title">{{ title }}</h1>
+        <div class="prose">
+          <p>{{ body }}</p>
+        </div>
+        <div class="c--cta">
+          <a href="{{ linkURL }}" class="button uppercase">{{ linkText }}</a>
+        </div>
       </div>
-      <div class="c--cta">
-        <a href="{{ linkURL }}" class="button uppercase">{{ linkText }}</a>
+      <div class="c--hero__image grid__column">
+        <img src="/images/{{ imageName }}" alt="{{ imaegAlt }}" class="with-border-radius" />
       </div>
     </div>
-    <div class="c--hero__image grid__column">
-      <img src="/images/{{ imageName }}" alt="{{ imaegAlt }}" class="with-border-radius" />
-    </div>
-  </div>
-</section>
-
+  </section>
 {% endmacro %}

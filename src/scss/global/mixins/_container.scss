@@ -5,17 +5,17 @@
 @mixin container {
   @include clearfix;
   margin: 0 auto;
-  max-width: rem($container-width);
-  padding-left: rem($container-padding--mobile);
-  padding-right: rem($container-padding--mobile);
+  max-width: var(--container-width);
+  padding-left: var(--container-padding--mobile);
+  padding-right: var(--container-padding--mobile);
 
   @include breakpoint(medium) {
-    padding-left: rem($container-padding--tablet);
-    padding-right: rem($container-padding--tablet);
+    padding-left: var(--container-padding--tablet);
+    padding-right: var(--container-padding--tablet);
   }
 
   @include breakpoint(large) {
-    padding-left: rem($container-padding);
-    padding-right: rem($container-padding);
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
   }
 }

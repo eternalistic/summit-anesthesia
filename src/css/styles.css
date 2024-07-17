@@ -15,7 +15,15 @@
   --color-orange-1: #ff6b35;
   --color-orange-2: #f7c59f;
   --color-beige-1: #f6f5f1;
-  --color-dark-1: #222222;
+  --color-dark-1: #222;
+  --container-padding: 3.125rem;
+  --container-padding--mobile: 1.25rem;
+  --container-padding--tablet: 2.1875rem;
+  --container-width: 82.5rem;
+  --gutter: 1rem;
+  --header-height--mobile: 5.9375rem;
+  --global-radius: 8px;
+  --z-index--mobile-menu: 98;
 }
 
 html {
@@ -601,7 +609,7 @@ a.button:visited.button--1:focus {
 .form-item select,
 .form-item textarea {
   background: var(--color-white);
-  border-radius: 0.3125rem;
+  border-radius: var(--global-radius);
   border: 2px solid #ccc;
   caret-color: var(--color-blue-1);
   color: var(--color-black);
@@ -643,9 +651,9 @@ a.button:visited.button--1:focus {
 
 .container {
   margin: 0 auto;
-  max-width: 82.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  max-width: var(--container-width);
+  padding-left: var(--container-padding--mobile);
+  padding-right: var(--container-padding--mobile);
 }
 .container:after {
   content: "";
@@ -654,14 +662,14 @@ a.button:visited.button--1:focus {
 }
 @media (min-width: 42.5em) {
   .container {
-    padding-left: 2.1875rem;
-    padding-right: 2.1875rem;
+    padding-left: var(--container-padding--tablet);
+    padding-right: var(--container-padding--tablet);
   }
 }
 @media (min-width: 64em) {
   .container {
-    padding-left: 3.125rem;
-    padding-right: 3.125rem;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
   }
 }
 .container .container {
@@ -874,7 +882,7 @@ a.button:visited.button--1:focus {
 }
 
 .with-border-radius {
-  border-radius: 8px;
+  border-radius: var(--global-radius);
 }
 
 img {
@@ -1044,7 +1052,7 @@ iframe {
   top: 50%;
   transform: translate(-50%, -50%);
   background: rgba(var(--color-black), 0.5);
-  border-radius: 5px;
+  border-radius: var(--global-radius);
   color: var(--color-white);
   content: "Enlarge image";
   opacity: 0;
@@ -1070,7 +1078,7 @@ iframe {
 }
 
 .grid {
-  grid-column-gap: 32px;
+  grid-column-gap: calc(var(--gutter) * 2);
 }
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .grid {
@@ -1289,14 +1297,14 @@ iframe {
 
 @media (min-width: 42.5em) {
   .header-top__menu-item + .header-top__menu-item {
-    border-left: 1px solid rgba(var(--color-white), 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     margin-left: 0.625rem;
     padding-left: 0.625rem;
   }
 }
 
 .header-main {
-  height: 5.9375rem;
+  height: var(--header-height--mobile);
 }
 @media (min-width: 42.5em) {
   .header-main {
@@ -1304,8 +1312,8 @@ iframe {
   }
 }
 .header-main .container {
-  padding-bottom: 1.25rem;
-  padding-top: 1.25rem;
+  padding-bottom: var(--container-padding--mobile);
+  padding-top: var(--container-padding--mobile);
   position: relative;
 }
 @media (min-width: 42.5em) {
@@ -1313,8 +1321,8 @@ iframe {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: var(--gutter);
+    padding-top: var(--gutter);
   }
 }
 
@@ -1496,9 +1504,9 @@ body.page-success {
     left: 0;
     padding: 1.25rem;
     position: absolute;
-    top: 5.9375rem;
+    top: var(--header-height--mobile);
     width: 100%;
-    z-index: 98;
+    z-index: var(--z-index--mobile-menu);
   }
   @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     .primary-menu {
@@ -1664,7 +1672,7 @@ body.is-navigation-expanded .primary-menu {
 }
 
 .c--feature__content {
-  grid-column-gap: 32px;
+  grid-column-gap: calc(var(--gutter) * 2);
 }
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .c--feature__content {
@@ -1743,7 +1751,7 @@ body.is-navigation-expanded .primary-menu {
   background: linear-gradient(90deg, rgb(229, 244, 250) 0%, rgba(229, 244, 250, 0.5) 75%, rgb(207, 224, 242) 100%);
 }
 .c--hero .container {
-  grid-column-gap: 32px;
+  grid-column-gap: calc(var(--gutter) * 2);
   padding-block-end: 5rem;
   padding-block-start: 2.5rem;
   position: relative;

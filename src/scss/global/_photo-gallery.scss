@@ -17,7 +17,7 @@
     &::after {
       @include center;
       background: rgba(var(--color-black), 0.5);
-      border-radius: $global-radius;
+      border-radius: var(--global-radius);
       color: var(--color-white);
       content: "Enlarge image";
       opacity: 0;

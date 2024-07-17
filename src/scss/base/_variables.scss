@@ -10,11 +10,9 @@ $base-font-size: 16px;
 //========================================//
 
 :root {
-  // General.
+  // Colors.
   --color-black: #000;
   --color-white: #fff;
-
-  // Color scheme.
   --color-blue-1: #dcf4fb;
   --color-blue-2: #2c76e2;
   --color-blue-3: #183257;
@@ -23,29 +21,20 @@ $base-font-size: 16px;
   --color-blue-6: #9fa6bd;
   --color-green-1: #0bc1bb;
   --color-green-2: #e6f9f8;
-
   --color-orange-1: #ff6b35;
   --color-orange-2: #f7c59f;
   --color-beige-1: #f6f5f1;
+  --color-dark-1: #222;
 
-  --color-dark-1: #222222;
+  // Layout.
+  --container-padding: 3.125rem;
+  --container-padding--mobile: 1.25rem;
+  --container-padding--tablet: 2.1875rem;
+  --container-width: 82.5rem;
+  --gutter: 1rem;
+  --header-height--mobile: 5.9375rem;
+  --global-radius: 8px;
+
+  // Z-index.
+  --z-index--mobile-menu: 98;
 }
-
-// Page.
-//========================================//
-
-// Layout.
-$container-padding: 50px;
-$container-padding--mobile: 20px;
-$container-padding--tablet: 35px;
-$container-width: 1320px;
-$gutter: 16px;
-$header-height--mobile: 95px;
-
-// Border Radius.
-//========================================//
-$global-radius: 5px;
-
-// Z-index.
-//========================================//
-$z-index--mobile-menu:          98;
