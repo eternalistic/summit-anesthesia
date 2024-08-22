@@ -3,10 +3,15 @@ layout: layout.html
 pageTitle: Sorry, we cannot find that page.
 permalink: 404.html
 ---
+
+{# Components. #}
+{% import "components/prose/prose.njk" as prose %}
+
 <div class="container">
   <img src="/images/404.png" alt="404 not found" />
   {% include 'page-title.njk' %}
-  <div class="prose">
-    <p><a href="/" class="button uppercase">Back to homepage</a></p>
-  </div>
+  {{ prose.component(
+    content =
+      '<p><a href="/" class="button uppercase">Back to homepage</a></p>'
+  )}}
 </div>

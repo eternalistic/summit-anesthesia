@@ -7,8 +7,7 @@
   @include grid;
   @include grid--twelve-column;
   margin: 0;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  padding-inline: var(--container-padding);
 
   // IE11.
   @include ie11 {
@@ -16,8 +15,7 @@
   }
 
   @include breakpoint(medium) {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     max-width: var(--container-width);
   }
 }

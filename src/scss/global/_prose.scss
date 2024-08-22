@@ -6,9 +6,8 @@
 .prose {
 
   // Links.
-  a,
-  a:visited {
-    // background-image: linear-gradient(var(--color-green-1), var(--color-green-1));
+  a:not(.button),
+  a:visited:not(.button) {
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 100% 0.1em;
@@ -30,31 +29,31 @@
 
   p.intro {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
   }
 
   ul {
     font-family: $font-header;
-    font-size: rem(16px);
-    line-height: math.div(22, 16);
-    margin: 0 0 rem(16px);
-    padding: 0 0 0 rem(40px);
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin: 0 0 1rem;
+    padding: 0 0 0 2.5rem;
 
     @include breakpoint(medium) {
-      font-size: rem(18px);
-      line-height: math.div(24, 18);
-      margin-bottom: rem(24px);
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     li {
 
       // Siblings.
       + li {
-        margin-top: rem(16px);
+        margin-top: 1rem;
 
         @include breakpoint(medium) {
-          margin-top: rem(24px);
+          margin-top: 1.5rem;
         }
       }
     }
@@ -63,10 +62,10 @@
   ul ul,
   ul ol {
     margin-bottom: 0;
-    margin-top: rem(16px);
+    margin-top: 1rem;
 
     @include breakpoint(medium) {
-      margin-top: rem(24px);
+      margin-top: 1.5rem;
     }
   }
 
@@ -101,53 +100,51 @@
   blockquote {
     border-left: 8px solid var(--color-blue-2);
     font-family: $font-header;
-    font-size: rem(18px);
-    line-height: math.div(28, 18);
-    margin: 0 0 rem(24px);
-    padding: 0 0 0 rem(24px);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 0 0 1.5rem;
+    padding: 0 0 0 1.5rem;
 
     @include breakpoint(medium) {
-      font-size: rem(22px);
-      line-height: math.div(32, 22);
-      padding-left: rem(40px);
+      font-size: 1.375rem;
+      line-height: 2rem;
+      padding-left: 2.5rem;
     }
 
     cite {
       display: block;
-      font-size: rem(16px);
-      line-height: math.div(24, 16);
-      margin-top: rem(10px);
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: .625rem;
     }
 
     // Siblings.
     + blockquote {
-      margin-top: rem(32px);
+      margin-top: 2rem;
 
       @include breakpoint(medium) {
-        margin-top: rem(64px);
+        margin-top: 4rem;
       }
     }
   }
 }
 
-
 .ekg {
   display: block;
-  height: 2px;
+  height: 0.125rem;
   border: 0;
-  background: red;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background: #f30;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   position: relative;
   overflow: visible;
 
   &::after {
-    content: "";
-    background: green;
-    display: block;
-    width: 40px;
-    height: 40px;
-    left: 20px;
     @include vertical-center;
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 1.25rem;
   }
 }

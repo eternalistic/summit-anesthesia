@@ -1,10 +1,9 @@
-{%  macro component(
-  content,
-  intro = false
+{% macro component(
+  content
 ) %}
   {% if content %}
     <div class="prose">
-      <p{% if intro == true %} class="intro"{% endif %}>{{ content }}</p>
+      {{ content|safe }}
     </div>
   {% endif %}
 {% endmacro %}

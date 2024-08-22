@@ -5,6 +5,7 @@ title: Veterinary Equipment Repair and Support
 
 {# Components. #}
 {% import "components/hero/hero.njk" as hero %}
+{% import "components/prose/prose.njk" as prose %}
 
 {{ hero.component(
   title = title,
@@ -22,23 +23,29 @@ title: Veterinary Equipment Repair and Support
       <div class="c--feature__item grid__column with-border-radius">
         <img src="/images/icons/veterinary.svg" alt="Veterinary pay icon" class="c--feature__icon" />
         <h2 class="c--feature__title">Licensed Veterinary Technicians</h2>
-        <div class="prose">
-          <p>We have comprehensive expertise in anesthesia machines and their accompanying accessories commonly encountered in veterinary medicine.</p>
-        </div>
+        {{ prose.component(
+          content = '
+            <p>We have comprehensive expertise in anesthesia machines and their accompanying accessories commonly encountered in veterinary medicine.</p>
+          '
+        )}}
       </div>
       <div class="c--feature__item grid__column with-border-radius">
         <img src="/images/icons/transportation.svg" alt="Repair truck icon" class="c--feature__icon" />
         <h2 class="c--feature__title">Repair Equipment</h2>
-        <div class="prose">
-          <p>Our service technicians are equipped with repair parts in their vehicles, enabling us to promptly address emergencies and perform necessary repairs during machine service.</p>
-        </div>
+        {{ prose.component(
+          content = '
+            <p>Our service technicians are equipped with repair parts in their vehicles, enabling us to promptly address emergencies and perform necessary repairs during machine service.</p>
+          '
+        )}}
       </div>
       <div class="c--feature__item grid__column with-border-radius">
         <img src="/images/icons/travel.svg" alt="Location and travel icon" class="c--feature__icon" />
         <h2 class="c--feature__title">Maintenance and Support</h2>
-        <div class="prose">
-          <p>We provide maintenance for the typical veterinary anesthesia machines found in clinics, as well as select older human anesthesia machines occasionally utilized in veterinary settings.</p>
-        </div>
+        {{ prose.component(
+          content = '
+            <p>We provide maintenance for the typical veterinary anesthesia machines found in clinics, as well as select older human anesthesia machines occasionally utilized in veterinary settings.</p>
+          '
+        )}}
       </div>
     </div>
   </div>
@@ -52,10 +59,12 @@ title: Veterinary Equipment Repair and Support
       </div>
       <div class="grid__column grid__column-2">
         <h2 class="c--portfolio__title">Services</h2>
-        <div class="prose">
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-          <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
-        </div>
+        {{ prose.component(
+          content = '
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+            <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+          '
+        )}}
         <div class="c--cta">
           <a href="/contact" class="button uppercase">See Equipment We Service</a>
         </div>
